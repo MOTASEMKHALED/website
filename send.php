@@ -44,12 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       // Send email
       $mail->send(); 
-      echo '<script>
-          
-      alert("Message has been sent successfully");
-      
-      </script>';
-
+      echo '<script>alert("Message has been sent successfully");</script>';
       header("Location: index.html");
       exit(); 
     } 
