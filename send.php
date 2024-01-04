@@ -50,7 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
       </script>';
 
-
+      header("Location: index.html");
+      exit(); 
     } 
     catch (Exception $e) {
       echo "

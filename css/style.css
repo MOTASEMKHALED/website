@@ -273,16 +273,18 @@ a:focus {
   font-weight: 600;
   padding: 10px;
 }
-.detail-box span {
-  color: #f09654;
-}
+
 
 .slider_section .detail-box h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #00204a;
+}
+.detail-box h2{
+  font-size:25px;
+  color: #f09654;
 }
 
 .slider_section .detail-box p {
