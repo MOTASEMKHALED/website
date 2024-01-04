@@ -8,17 +8,17 @@ require './PHPMailer/src/Exception.php';
 require './PHPMailer/src/PHPMailer.php';
 require './PHPMailer/src/SMTP.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-  if (isset($_GET['submit'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (isset($_POST['submit'])) {
     // Retrieve form data
-    $name = $_GET['name'];
-    $email = $_GET['email'];
-    $phone = $_GET['phone'];
-    $companyWeb = $_GET['company-web'];
-    $company = $_GET['company'];
-    $subject = $_GET['Subject'];
-    $message = $_GET['message'];
-    $submit = $_GET['submit'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $companyWeb = $_POST['company-web'];
+    $company = $_POST['company'];
+    $subject = $_POST['Subject'];
+    $message = $_POST['message'];
+    $submit = $_POST['submit'];
 
     // PHPMailer initialization
     $mail = new PHPMailer(true);
